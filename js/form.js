@@ -8,3 +8,4 @@ function hide_class(){
     document.getElementById("class").style.display = "none";
     document.getElementById("class_label").style.display = "none";
 }
+
