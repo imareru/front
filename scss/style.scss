@@ -1,0 +1,50 @@
+@import 'vars';
+@import 'fonts';
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *before{
+    box-sizing:inherit;
+}
+
+body{
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+
+
+.header{
+    background-color: $accent;
+    position: absolute;
+    &__inner{
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.logo__link{
+    margin-left: 8px;
+}
+
+
+.logo{
+    position: absolute;
+    width: 132px;
+    height: 39px;
+    left: 94px;
+    top: 17px;
+    background-color:$accent;
+}
+
+.input_login{
+    width: 169px;
+    height: 38px;
+    left: 83px;
+    top: 361px;
+
+    filter: drop-shadow(0px 4px 4px #AFAFAF);
+}

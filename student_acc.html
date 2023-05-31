@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <!-- <div class="container"> -->
+            <div class="navbar__wrap">
+              <img class='arrow-icon' src="icons/icon _arrow.svg" alt="" onclick="history.back();" >
+              <a href="#" class="logo" id="logo">Кабинет ученика</a>
+  
+              <div class="hamb">
+                <div class="hamb__field" id="hamb">
+                  <span class="bar"></span> <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+              <ul class="menu" id="menu">
+                <li><a href="teacher_acc.html">Личный кабинет</a></li>
+                <li><a href="tests.html">Тесты</a></li>
+                <li><a href="subjects.html">Предметы</a></li>
+              </ul>
+            </div>
+          <!-- </div> -->
+        </nav>
+
+
+  
+        <div class="popup" id="popup"></div>
+      </header>
+
+      <div class="container">
+        <div class="teach-profile">
+          <div class="teach-profile__fio">
+            <h3>Ахметзянова Рената Рустемовна</h3>
+          </div>
+          <div class="img__wrapper">
+            <img src="icons/profile_photo.jpg" alt="" class="profile_photo" >
+          </div>
+          <div class="teach-profile__data">
+            <h5>Логин</h5>
+            <h5>Дата рождения</h5>
+            <h5>Предметы</h5>
+            <h5>Логин</h5>
+            <h5><a href="edit_profile.html">Редактировать</a></h5>
+          </div>
+        </div>
+      </div>
+  
+  
+  
+        <!-- <script src="js/teacher_acc.js"></script> -->
+        <script src="js/burger.js"></script>
+</body>
+</html>

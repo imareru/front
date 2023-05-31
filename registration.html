@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <header class="header">
+        <img class='arrow-icon' src="icons/icon _arrow.svg" alt="" onclick="history.back();" >
+        <!-- <div class="container"> -->
+            <div class="header_inner">
+                <h3>Регистрация</h3>
+            </div>
+            
+        <!-- </div> -->
+    </header>
+
+    <div class="reg-form">
+        <form action="js/form.js">
+            <p>Вы - </p>
+            <div class="role_radio">
+                <input type="radio" name="role" id="stud_radio" value="student" onclick="show_class()">
+                <label for="stud_radio">Ученик</label>
+                <input type="radio" name="role" id="teach_radio" value="teacher" checked onclick="hide_class()">
+                <label for="teach_radio">Учитель</label>
+            </div>
+
+            <label for="class" id="class_label">Ваш класс:</label>
+            <input type="number" name="class" id="class">
+            
+            
+            <p>Фамилия*</p>
+            <input type="text" name="surname" id="f_input" required placeholder="Иванов">
+            <p>Имя*</p>
+            <input type="text" name="name" id="i_input" required placeholder="Иван">
+            <p>Отчество</p>
+            <input type="text" name="patronymic" id="o_input" required placeholder="Иванович">
+            <p>Логин</p>
+            <input type="text" name="login" id="l_input" required placeholder="login@mail.ru">
+            <p>Пароль</p>
+            <input type="password" name="password" id="p_input">
+            <p></p>
+
+            <label for="brithday_reg">Дата рождения:</label>
+            <input type="date" id="brithday_reg" name="birthday">
+
+            <p>Ваш пол:</p>
+            <div class="sex_radio">
+                <input type="radio" name="sex" id="fem" value="female">
+                <label for="fem">Женский</label>
+                <input type="radio" name="sex" id="male" value="male">
+                <label for="male">Мужской</label>
+            </div>
+
+            <button type="submit">Отправить</button> 
+            
+
+        </form>
+    </div>
+
+    <script src="js/form.js"></script>
+    
+</body>
+</html>
