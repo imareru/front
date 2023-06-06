@@ -9,28 +9,46 @@
     <title>Регистрация</title>
 </head>
 <body>
-    <header class="header">
-        <img class='arrow-icon' src="icons/icon _arrow.svg" alt="" onclick="history.back();" >
-        <!-- <div class="container"> -->
-            <div class="header_inner">
-                <h3>Регистрация</h3>
+    <header>
+        <nav class="navbar">
+          <!-- <div class="container"> -->
+            <div class="navbar__wrap">
+              <img src="icons/icon _arrow.svg" alt="" class="arrow-icon" onclick="history.back();" >
+              <a href="#" class="logo" id="logo">Регистрация</a>
+  
+              <!-- <div class="hamb">
+                <div class="hamb__field" id="hamb">
+                  <span class="bar"></span> <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+              <ul class="menu" id="menu">
+                <li><a href="teacher_acc.html">Личный кабинет</a></li>
+                <li><a href="tests.html">Тесты</a></li>
+                <li><a href="classes.html">Классы</a></li>
+                <li><a href="subjects.html">Предметы</a></li>
+              </ul> -->
             </div>
-            
-        <!-- </div> -->
-    </header>
+          <!-- </div> -->
+        </nav>
+  
+        <div class="popup" id="popup"></div>
+      </header>
 
+<div class="container">
     <div class="reg-form">
-        <form action="js/form.js">
+        <form action="#" id="regform">
             <p>Вы - </p>
             <div class="role_radio">
                 <input type="radio" name="role" id="stud_radio" value="student" onclick="show_class()">
                 <label for="stud_radio">Ученик</label>
-                <input type="radio" name="role" id="teach_radio" value="teacher" checked onclick="hide_class()">
+                
+                <input type="radio" name="role" id="teach_radio" value="teacher" onclick="hide_class()">
                 <label for="teach_radio">Учитель</label>
             </div>
 
             <label for="class" id="class_label">Ваш класс:</label>
-            <input type="number" name="class" id="class">
+            <input type="number" name="num_class" id="num_class">
             
             
             <p>Фамилия*</p>
@@ -50,9 +68,9 @@
 
             <p>Ваш пол:</p>
             <div class="sex_radio">
-                <input type="radio" name="sex" id="fem" value="female">
+                <input type="radio" name="gender" id="fem" value="female">
                 <label for="fem">Женский</label>
-                <input type="radio" name="sex" id="male" value="male">
+                <input type="radio" name="gender" id="male" value="male">
                 <label for="male">Мужской</label>
             </div>
 
@@ -61,8 +79,9 @@
 
         </form>
     </div>
+</div>
 
-    <script src="js/form.js"></script>
+    <script src="js/registration.js"></script>
     
 </body>
 </html>

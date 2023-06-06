@@ -12,13 +12,14 @@ body {
 }
 
 .container {
-  justify-content: center;
-  padding-top: 80px;
-  align-content: center;
+  /* justify-content: center; */
+  /* padding-top: 80px; */
+  /* align-content: center; */
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   height: 100%;  
+  padding: 80px 10px;
 }
 
 .header {
@@ -199,6 +200,8 @@ height: 21px;
   display: flex;
   justify-content: space-between;
   height: 100%;
+  color:#fff;
+  /* text-align: center; */
 }
 
 .hamb {

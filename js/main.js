@@ -1,12 +1,3 @@
-
-
-//  function send_req(){
-//     fetch('http://localhost:8080/auth')
-//   .then(response => response.json())
-//   .then(data => console.log(data))
-//   .catch(error => console.error(error))
-//  }
-
  const form = document.getElementById('form');
 
  form.addEventListener('submit', getFormValue);
