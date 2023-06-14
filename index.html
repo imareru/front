@@ -1,51 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Экспертка</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная страница</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
 
-    
-
-</head>
-
-<body>
-
-    <header class="header">
-        <div class="navbar">
+  <body>
+    <header>
+      <div class="navbar">
         <div class="navbar__wrap">
-            <!-- <div class="header_inner"> -->
-                <h1>Главная</h1>
-            <!-- </div> -->
+          <!-- <div class="header_inner"> -->
+          <a href="#" class="logo" id="logo">Главная</a>
+          <!-- </div> -->
         </div>
-    </div>
+      </div>
     </header>
 
     <div class="container">
-
-    <!-- <div class="reglink">     -->
-        <h1 class="reglink">Нет аккаунта? <a href="registration.html">Зарегистрируйтесь</a> или войдите</h1>
-    <!-- </div> -->
-
-    <div class="login">
-        <form class="login-form" action="#" method="#" id="form">
-            
-            <input type="text" name="" id="input_login" required placeholder="Логин">
-            <input type="password" name="" id="input_pass" required placeholder="Пароль">
-            <button type="submit">Войти</button>
-    
-        </form>
-        <!-- <a href="forget_pass.html" class="forget">Забыли пароль?</a> -->
-        
+      <div class="starter-block">
+        <div class="starter-block__background">
+          <p class="start-text">
+            Удобный сервис для проверки знаний и подготовке к занятиям
+          </p>
+        </div>
+        <img src="icons/lemon.svg" alt="" class="lemon1_pic">
+        <img src="icons/lemon.svg" alt="" class="lemon2_pic">
+        <img src="icons/jar.svg" class="jar_pic">
+      </div>
+      <div class="login-block">
+        <h1 class="reglink">
+          Нет аккаунта? <a href="registration.html">Зарегистрируйтесь</a> или
+          войдите
+        </h1>
+        <!-- <div class="login"> -->
+          <form class="login-form" action="#" method="#" id="form">
+            <input
+              class="input_field"
+              type="text"
+              name=""
+              id="input_login"
+              required
+              placeholder="введите логин"
+            />
+            <input
+              class="input_field"
+              type="password"
+              name=""
+              id="input_pass"
+              required
+              placeholder="введите пароль"
+            />
+            <p><button type="submit" class="btn">войти</button></p>
+            <a href="forget_pass.html">Забыли пароль?</a>
+          </form>
+        <!-- </div> -->
+      </div>
     </div>
-</div>
-    
-<script src="js/main.js"></script>
-    <!-- <button onclick="send_req()">Ghbdtn</button> -->
-</body>
 
+    <footer class="footer">
+        <p>Сервис разработан в ходе выполнения выпускной квалификационной работы</p>
+
+    <p>Ахметзянова Рената Рустемовна</p>
+    <p>Казань 2023</p>
+</footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

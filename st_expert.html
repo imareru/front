@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Диалог с экспертом</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__wrap">
+              <img class='arrow-icon' src="icons/icon_arrow.svg" alt="" onclick="history.back();" >
+              <a href="#" class="logo" id="logo">Диалог с экспертом</a>
+  
+              <div class="hamb">
+                <div class="hamb__field" id="hamb">
+                  <span class="bar"></span> <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+              <ul class="menu" id="menu">
+                <li><a href="st_acc.html">Личный кабинет</a></li>
+                <li><a href="st_tests.html">Задания</a></li>
+                <li><a href="st_subjects.html">Материалы</a></li>
+                <li><a href="st_expert.html">Диалог с экспертом</a></li>
+              </ul>
+            </div>
+        </nav>
+ 
+        <div class="popup" id="popup"></div>
+      </header>
+
+      <div class="container">
+        <p>Для начала диалога нажмите "Старт"</p>
+
+        <div class="block" id="dialogue">
+          <button class="btn" style="float: right;" onclick="start_dialogue()" id="start_btn">Старт</button>
+          <ul id="messageList"></ul>
+          
+          <!-- <form action="#" id="st_expert-form">
+            <label for="question">
+                Ваш вопрос:
+            </label>
+            <input type="text" name="question" id="question">
+            <button type="submit" class="btn" >Отправить</button>
+            
+          </form>
+          <p><label for="answer">
+            Ответ эксперта:
+        </label></p>
+        <input type="text" name="answer" readonly> -->
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>
+          Сервис разработан в ходе выполнения выпускной квалификационной работы
+        </p>
+        <p>Ахметзянова Рената Рустемовна</p>
+        <p>Казань 2023</p>
+      </footer>
+
+      <script src="js/jquery-3.7.0.min.js"></script>
+
+      <script src="js/burger.js"></script>
+      <!-- <script type="module" src="js/st_expert.js"></script> -->
+      <script src="js/knowledge_base.js"></script>
+
+</body>
+</html>

@@ -1,3 +1,21 @@
+
+document.getElementById('num_class').style.display = 'none';
+
+function show_class(){
+  if(form.querySelector('input[name="role"]:checked')){
+  document.getElementById("num_class").style.display = "block";
+  document.getElementById("class_label").style.display = "block";
+}
+  // console.log(form.querySelector('input[name="role"]:checked').value)
+}
+
+function hide_class(){
+  document.getElementById("num_class").style.display = "none";
+  document.getElementById("class_label").style.display = "none";
+  // console.log(form.querySelector('input[name="role"]:checked').value)
+
+}
+
 const form = document.getElementById('regform');
 
  form.addEventListener('submit', getFormValue);
@@ -45,15 +63,4 @@ const form = document.getElementById('regform');
   }
 
   
-function show_class(){
-    document.getElementById("class").style.display = "block";
-    document.getElementById("class_label").style.display = "block";
-    // console.log(form.querySelector('input[name="role"]:checked').value)
-}
 
-function hide_class(){
-    document.getElementById("class").style.display = "none";
-    document.getElementById("class_label").style.display = "none";
-    // console.log(form.querySelector('input[name="role"]:checked').value)
-
-}

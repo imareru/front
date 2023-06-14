@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задания</title>
+    <script defer src="js/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+    <header>
+          <nav class="navbar">
+              <div class="navbar__wrap">
+                <img src="icons/icon_arrow.svg" alt="" class='arrow-icon' onclick="history.back();" >
+                <a href="#" class="logo" id="logo">Задания</a>
+                <div class="hamb">
+                  <div class="hamb__field" id="hamb">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
+                  </div>
+                </div>
+                
+                <ul class="menu" id="menu">
+                  <li><a href="t_acc.html">Личный кабинет</a></li>
+                  <li><a href="t_tests.html">Задания</a></li>
+                  <li><a href="t_classes.html">Классы</a></li>
+                  <li><a href="t_subjects.html">Материалы</a></li>
+                </ul>
+              </div>
+          </nav>
+    
+          <div class="popup" id="popup"></div>
+        </header>
+
+        <div class="container" id="container">
+          <div class="block" id="choose">
+            <label for="choose-sub">Выберите предмет: </label>
+            <select name="choose-sub" id="choose-sub">
+              <option value="compose">Композиция</option>
+            <option value="art">Живопись</option>
+            <option value="histort">История искусств</option>
+            <option value="paint">Рисунок</option>
+            <option value="decor">ДПИ</option>
+            </select>
+
+            <p></p>
+
+            <label for="choose-class">Выберите класс: </label>
+            <!-- <p>Выберите класс: </p> -->
+            <select name="choose-class" id="choose-class">
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+              <option value="five">5</option>
+            </select>
+
+            <p></p>
+            <button onclick="location.href='t_new_test.html'" class="btn">Добавить задание</button>
+          </div>
+    
+
+          
+        </div>
+
+        <footer class="footer">
+          <p>
+            Сервис разработан в ходе выполнения выпускной квалификационной работы
+          </p>
+          <p>Ахметзянова Рената Рустемовна</p>
+          <p>Казань 2023</p>
+        </footer>
+        <script src="js/burger.js"></script>
+
+</body>
+</html>

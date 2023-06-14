@@ -18,3 +18,10 @@ fetch('http://localhost:8080/teachers')
   .then(data => console.log(data))
   .catch(error => console.error(error))
  }
+
+ function tap_me(){
+  fetch('http://localhost:8080/teachers')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error))
+ }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактирование</title>
+    <script defer src="js/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <!-- <div class="container"> -->
+            <div class="navbar__wrap">
+              <img class='arrow-icon' src="icons/icon_arrow.svg" alt="" onclick="history.back();" >
+
+              <a href="#" class="logo" id="logo">Редактировать</a>
+              <div class="hamb">
+                <div class="hamb__field" id="hamb">
+                  <span class="bar"></span> <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+              
+              <ul class="menu" id="menu">
+                <li><a href="st_acc.html">Личный кабинет</a></li>
+                <li><a href="st_tests.html">Задания</a></li>
+                <li><a href="st_subjects.html">Материалы</a></li>
+                <li><a href="st_expert.html">Диалог с экспертом</a></li>
+              </ul>
+            </div>
+          <!-- </div> -->
+        </nav>
+  
+        <div class="popup" id="popup"></div>
+      </header>
+  
+      <div class="container">
+        <div class="block">
+            <form action="#" id="regform">
+                
+                <p>Новое фото:</p>
+                <input type="file" accept="image/**" name="new_profile_photo">
+            
+                
+                <p>Фамилия*:</p>
+                <input type="text" name="surname" id="f_edit" required placeholder="Иванов">
+                <p>Имя*:</p>
+                <input type="text" name="name" id="i_edit" required placeholder="Иван">
+                <p>Отчество:</p>
+                <input type="text" name="patronymic" id="o_edit" required placeholder="Иванович">
+                <p>Логин*:</p>
+                <input type="text" name="login" id="l_edit" required placeholder="login@mail.ru">
+                <p></p>
+                <!-- <label for="password">Пароль</label> -->
+                <p>Пароль*:</p>
+                <input type="password" name="password" id="p_edit">
+                <p></p>
+    
+                <!-- <label for="brithday_reg">Дата рождения:</label> -->
+                <p>Дата рождения*:</p>
+                <input type="date" id="brithday_edit" name="birthday">
+
+                <p></p>
+                <!-- <label for="class_id_input">Ваш класс:</label> -->
+                <p>Ваш класс*:</p>
+                <input type="text" id="class_id_edit" name="class_id_input">
+
+                
+    <p></p>
+                <button type="submit" class="btn">Отправить</button> 
+                
+    
+            </form>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+      <p>
+        Сервис разработан в ходе выполнения выпускной квалификационной работы
+      </p>
+      <p>Ахметзянова Рената Рустемовна</p>
+      <p>Казань 2023</p>
+    </footer>
+      <script src="js/burger.js"></script>
+</body>
+</html>

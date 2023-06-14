@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Классы</title>
+    <script defer src="js/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__wrap">
+          <img
+            class="arrow-icon"
+            src="icons/icon_arrow.svg"
+            alt=""
+            onclick="history.back();"
+          />
+          <a href="#" class="logo" id="logo">Классы</a>
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span> <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+
+          <ul class="menu" id="menu">
+            <li><a href="t_acc.html">Личный кабинет</a></li>
+            <li><a href="t_tests.html">Задания</a></li>
+            <li><a href="t_classes.html">Классы</a></li>
+            <li><a href="t_subjects.html">Материалы</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="popup" id="popup"></div>
+    </header>
+
+    <div class="container">
+      <div class="block" id="choose">
+        <label for="choose-sub">Выберите класс: </label>
+        <select name="choose-class" id="choose-class">
+          <option value="nvr">Выбор</option>
+          <option value="one">1</option>
+          <option value="two">2</option>
+          <option value="three">3</option>
+          <option value="four">4</option>
+          <option value="five">5</option>
+        </select>
+        <p></p>
+        <button class="btn" style="float: right; ">показать</button>
+      </div>
+      <p></p>
+      <div class="block">
+        <table id="students_list">
+          <tr>
+            <th>ФИО</th>
+            <th>Дата рождения</th>
+          </tr>
+          <tr>
+            <td>Microsoft</td>
+            <td>20.3</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>
+        Сервис разработан в ходе выполнения выпускной квалификационной работы
+      </p>
+      <p>Ахметзянова Рената Рустемовна</p>
+      <p>Казань 2023</p>
+    </footer>
+
+    <script src="js/burger.js"></script>
+    <script src="js/t_class.js"></script>
+  </body>
+</html>

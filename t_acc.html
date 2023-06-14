@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет</title>
+    <script defer src="js/jquery-3.7.0.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- <div class="container"> -->
+        <div class="navbar__wrap">
+          <img
+            src="icons/icon_arrow.svg"
+            alt=""
+            class="arrow-icon"
+            onclick="history.back();"
+          />
+          <a href="#" class="logo" id="logo">Кабинет учителя</a>
+
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span> <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <ul class="menu" id="menu">
+            <li><a href="t_acc.html">Личный кабинет</a></li>
+            <li><a href="t_tests.html">Задания</a></li>
+            <li><a href="t_classes.html">Классы</a></li>
+            <li><a href="t_subjects.html">Материалы</a></li>
+          </ul>
+        </div>
+        <!-- </div> -->
+      </nav>
+
+      <div class="popup" id="popup"></div>
+    </header>
+
+    <div class="container">
+      <div class="block">
+        <div class="teach-profile__fio" id="t_fio">
+          <h3>Иванов Иван Иванович</h3>
+        </div>
+        <div class="img__wrapper">
+          <img src="icons/profile_photo.jpg" alt="" class="profile_photo"/>
+        </div>
+
+        <div class="teach-profile__data" id="teach-profile__data">
+          <h5>Логин</h5>
+          <h5>Дата рождения</h5>
+          <h5>Предметы</h5>
+          <h5 class="edit_btn"><a href="t_edit_profile.html">Редактировать<img src="icons/icon_edit.svg" alt="" class="edit_icon"></a></h5>
+          </div>
+          <div class="st-profile__in">
+            <h5 id="st_login">Логин</h5>
+            <h5 id="st_date">Дата рождения</h5>
+            <h5 id="st_class">Предметы</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>
+        Сервис разработан в ходе выполнения выпускной квалификационной работы
+      </p>
+      <p>Ахметзянова Рената Рустемовна</p>
+      <p>Казань 2023</p>
+    </footer>
+
+    <script src="js/teacher_acc.js"></script>
+    <script src="js/burger.js"></script>
+  </body>
+</html>

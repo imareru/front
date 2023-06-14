@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Материалы</title>
+    <script defer src="js/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+
+    <header >
+       
+        <nav class="navbar">
+          <!-- <div class="container"> -->
+            <div class="navbar__wrap">
+              <img class='arrow-icon' src="icons/icon_arrow.svg" alt="" onclick="history.back();" >
+
+              <a href="#" class="logo" id="logo">Материалы</a>
+              <div class="hamb">
+                <div class="hamb__field" id="hamb">
+                  <span class="bar"></span> <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+              
+              <ul class="menu" id="menu">
+                <li><a href="st_acc.html">Личный кабинет</a></li>
+                <li><a href="st_tests.html">Задания</a></li>
+                <li><a href="st_subjects.html">Материалы</a></li>
+                <li><a href="st_expert.html">Диалог с экспертом</a></li>
+              </ul>
+            </div>
+          <!-- </div> -->
+        </nav>
+  
+        <div class="popup" id="popup"></div>
+      </header>
+
+      <div class="container">
+        <div class="choose" id="choose">
+          <label for="choose-sub">Выберите предмет: </label>
+          <select name="choose-sub" id="choose-sub">
+              <option value="compose">Композиция</option>
+              <option value="art">Живопись</option>
+              <option value="histort">История искусств</option>
+              <option value="paint">Рисунок</option>
+              <option value="decor">ДПИ</option>
+          </select>
+        </div>
+        <p>Список материалов для подготовки:</p>
+        <div class="block"></div>
+      </div>
+      
+
+  
+      <footer class="footer">
+        <p>
+          Сервис разработан в ходе выполнения выпускной квалификационной работы
+        </p>
+        <p>Ахметзянова Рената Рустемовна</p>
+        <p>Казань 2023</p>
+      </footer>
+
+      <script src="js/burger.js"></script>
+    
+</body>
+</html>

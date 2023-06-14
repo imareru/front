@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новое задание</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <!-- <div class="container"> -->
+            <div class="navbar__wrap">
+              <img src="icons/icon_arrow.svg" alt="" class="arrow-icon" onclick="history.back();" >
+              <a href="#" class="logo" id="logo">Новое задание</a>
+  
+              <div class="hamb">
+                <div class="hamb__field" id="hamb">
+                  <span class="bar"></span> <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </div>
+              <ul class="menu" id="menu">
+                <li><a href="t_acc.html">Личный кабинет</a></li>
+                <li><a href="t_tests.html">Задания</a></li>
+                <li><a href="t_classes.html">Классы</a></li>
+                <li><a href="t_subjects.html">Материалы</a></li>
+              </ul>
+            </div>
+          <!-- </div> -->
+        </nav>
+
+        
+  
+        <div class="popup" id="popup"></div>
+      </header>
+
+      <div class="container">
+            
+        <div class="block">
+            <form action="" id="new_t_form">
+            <label for="name_input">Название:</label>
+            <p></p>
+            <input type="text" name="name_input" id="name_input">
+        <!-- <p></p>
+            <label for="time_input">Время выполнения: </label>
+            <input type="time" name="time_input" id="">
+        <p></p>
+            <label for="acc_input">Доступно: </label>
+            <p></p>
+            <input type="radio" name="" id="" value="yes">
+            <input type="radio" name="" id="">
+        <p></p>
+            <label for="date_input">Дата завершения: </label>
+            <p></p>
+            <input type="date" name="date_input" id=""> -->
+        <p></p>
+            <!-- <label for="choose-class">Предмет: </label> -->
+            <p>Предмет</p>
+            <select name="choose-class" id="choose-sub">
+            <option value="compose">Композиция</option>
+            <option value="art">Живопись</option>
+            <option value="histort">История искусств</option>
+            <option value="paint">Рисунок</option>
+            <option value="decor">ДПИ</option>
+            </select>
+<p></p>
+            <button type="submit" class="btn">Создать</button>
+        </form>
+        </div>
+
+    
+</div>
+
+
+      <footer class="footer">
+        <p>
+          Сервис разработан в ходе выполнения выпускной квалификационной работы
+        </p>
+        <p>Ахметзянова Рената Рустемовна</p>
+        <p>Казань 2023</p>
+      </footer>
+
+      <script src="js/t_new_test.js"></script>
+      <script src="js/burger.js"></script>
+    
+</body>
+</html>
